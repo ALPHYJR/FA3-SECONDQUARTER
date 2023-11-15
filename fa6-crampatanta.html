@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                a{
+                    margin: 10px;
+                    text-decoration: none;
+                    padding: 5px;
+                    font-size: 30px;
+                }
+                div{
+                    margin: 10px;
+                    border: 2px solid black;
+                    width: 50px;
+                    padding: 100px;
+                    
+                }
+                #first-a:link{
+                    background-color: yellow;
+                    color: black;
+                }
+                #second-a:link{
+                    background-color: orange;
+                    color: black;
+                }
+                #first-a:visited, #second-a:visited{
+                    background-color:red;
+                    color: white;
+                }
+                #first-a:active, #second-a:active{
+                    background-color: green;
+                    color: white;
+                }
+                #first-a:hover, #second-a:hover{
+                    background-color: blue;
+                    color: white;
+                }
+                #second-class:target {
+                    border: 10px dotted green;
+                    background-color: cyan;
+                }
+                #first-class:target {
+                    background-color: yellow;
+                }
+            </style>
+            <title> Link States </title>
+        </head>
+        <body>
+            <a id = "first-a" href="#first-class">Link 1</a>
+            <a id = "second-a" href="#second-class">Link 2<br></a>
+            <br>
+            <div id = "first-class"> div 1 here </div><br>
+            <div id = "second-class"> div 1 here </div>
+        </body>
+    </html>
